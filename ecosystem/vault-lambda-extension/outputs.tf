@@ -15,3 +15,6 @@ You can SSH into the Vault EC2 instance using private.key:
 EOF
 }
 
+output "vault_server" {
+  value = aws_instance.vault-server
+}
